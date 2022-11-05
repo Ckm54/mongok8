@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+spec:
+# routing rules
+  rules:
+  - host: myapp.com #  enter in browser
+    http:
+      paths:
+      - backend:
+          serviceName: myapp-internal-service
+          servicePort: 8080
