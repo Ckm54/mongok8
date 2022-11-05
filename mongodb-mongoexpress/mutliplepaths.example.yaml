@@ -8,7 +8,7 @@ spec:
   tls:
   - hosts:
     - myapp.com
-    secretName: my-app-secret-tls # contains certificate info
+    secretName: myapp-secret-tls # contains certificate info
   rules:
   - host: myapp.com
     http:
