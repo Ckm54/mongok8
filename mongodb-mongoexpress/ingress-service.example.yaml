@@ -5,7 +5,7 @@ metadata:
 spec:
 # routing rules
   rules:
-  - host: myapp.com #  enter in browser
+  - host: myapp.com #  enter in browser --- must be valid
     http:
       paths:
       - backend:
